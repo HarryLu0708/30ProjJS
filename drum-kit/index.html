@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Project 1: Drum Kit</title>
+    </head>
+    <body>
+        <h1>Definitely Not a Good Drum Kit...</h1>
+        <div class="drum-kit">
+            <div class="key" data-key="65">
+                <kbd>A</kbd>
+                <span class="sound">A</span>
+            </div>
+            <div class="key" data-key="83">
+                <kbd>S</kbd>
+                <span class="sound">S</span>
+            </div>
+            <div class="key" data-key="68">
+                <kbd>D</kbd>
+                <span class="sound">D</span>
+            </div>
+        </div>
+
+        <audio data-key="65" src="sounds/snd1.mp3"></audio>
+        <audio data-key="83" src="sounds/snd2.mp3"></audio>
+        <audio data-key="68" src="sounds/snd3.mp3"></audio>
+
+        <script>
+            window.addEventListener("keydown",function(e){
+                const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+                const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+                console.log(audio);
+                console.log(key);
+                if(!audio)return;
+                audio.currentTime = 0;
+                audio.play();
+            });
+        </script>
+    </body>
+</html>
