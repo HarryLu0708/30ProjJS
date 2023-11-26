@@ -1,0 +1,104 @@
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.tabs{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.btn{
+    text-align: center;
+}
+
+.footer{
+    padding-top: 50px;
+    text-align: center;
+
+    grid-area: footer;
+}
+
+.header{
+    grid-area: header;
+}
+
+.card{
+    background-color: rgb(95, 95, 95);
+    box-shadow: 0 4px 8px 0 rgba(244, 3, 3, 0.2);
+    transition: 0.3s;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(244,3,3,0.5);
+}
+
+.sub-container{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+}
+
+.container{
+    padding: 2px 16px;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3{
+    color:red;
+    text-align: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 20px;
+}
+
+.c-btn{
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.contents{
+    grid-area: main;
+}
+
+button{
+    background-color: red;
+    color: yellow;
+}
+
+.search-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+input{
+    width: 30%;
+}
+
+
